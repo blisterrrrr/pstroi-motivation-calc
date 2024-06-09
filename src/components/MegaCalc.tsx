@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { calculate } from "@/utils";
 import { settings } from "../utils/defaults.ts";
-import {Input} from "@/components/ui/input.tsx";
+import { Input } from "@/components/ui/input.tsx";
 
 type TPerc = ReturnType<typeof calculate> | null;
 
@@ -13,7 +13,7 @@ export function MegaCalc() {
   const handleClick = () => {
     setPercentage(calculate(expenses, income, settings));
   };
-  console.log('rerender')
+  console.log("rerender");
   return (
     <>
       <label htmlFor="exp">Расходы: </label>
@@ -35,7 +35,7 @@ export function MegaCalc() {
       />
       <br />
       <button onClick={handleClick}>Посчитать</button>
-      <h2>{percentage?.itog.toFixed(2) || 0}</h2>
+      <h2>{percentage?.itog.toFixed(2) ?? 0}</h2>
       <p>
         {percentage ? (
           percentage?.additional.percentage ? (
