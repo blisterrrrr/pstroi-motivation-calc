@@ -26,7 +26,7 @@ export function LoginForm() {
     console.log(newResult)
   };
   return (
-    <div className='flex gap-3'>
+    <div className='flex flex-col gap-3 sm:flex-row'>
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle className="text-2xl">Мотиватор</CardTitle>
