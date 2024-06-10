@@ -66,7 +66,7 @@ export function LoginForm() {
         <Card className='flex flex-col justify-between'>
           <CardHeader>
             {percentage.additional.delta >= 0 ? (
-              <CardTitle>Ваша выручка: {percentage.itog.toFixed(2)}</CardTitle>
+              <CardTitle>Ваша премия: {percentage.itog.toFixed(2)}</CardTitle>
             ) : (
               <CardTitle>Расходы превысили доходы</CardTitle>
             )}
